@@ -1,0 +1,471 @@
+@media screen and (min-width: 475px) {
+  .lern-more__media-wrap {
+    padding-left: 10vw;
+  }
+}
+@media screen and (min-width: 568px) {
+  .lern-more__media-wrap {
+    padding-left: 10vw;
+  }
+
+  .details-wrap {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 700px) {
+  .lern-more__media-wrap {
+    padding-left: 15vw;
+  }
+}
+@media screen and (min-width: 810px) {
+  // HAM INTO navigation
+  .mobile-nav {
+    display: none;
+  }
+
+  nav {
+    height: 8rem;
+    justify-content: space-between;
+  }
+
+  .logo {
+    // margin-left: 24%;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 5%;
+    padding-right: 1rem;
+    align-items: center;
+
+    &__element {}
+  }
+
+  .nav-link {
+    @include flex;
+    padding: 1.2rem;
+    color: $brandDetailsBG;
+    font-family: $nav-font;
+    letter-spacing: 0.1px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .lern-more__media-wrap {
+    padding-left: 20vw;
+  }
+
+  footer {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .copyrights {
+    width: 33%;
+  }
+
+  .social {
+    width: 33%;
+    margin-right: 33%;
+  }
+}
+@media screen and (min-width: 950px) {
+  .lern-more__media-wrap {
+    padding-left: 25vw;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .lern-more__media-wrap {
+    padding-left: 32vw;
+  }
+
+  .customers-refs {
+    padding: 4.5rem 0 6rem;
+  }
+
+  .reference {
+    margin: 1.6rem;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: 1rem;
+
+    &__quotes {
+      padding: 1rem 2.9rem;
+      width: 40vw;
+      height: 15vh;
+      @include flex;
+      @include flexy-center;
+      @include flexy-column;
+      position: relative;
+      top: 1rem;
+
+      &--upper {
+        margin-top: 0;
+        margin-left: 5rem;
+        position: relative;
+        top: 0.5rem;
+        left: -2rem;
+      }
+
+      &--bottom {
+        margin-right: 5rem;
+        margin-bottom: 0;
+        position: relative;
+        top: 1.5rem;
+        right: -2rem;
+      }
+
+      &--green {
+        font-size: 1.2rem;
+        position: relative;
+        top: 1rem;
+      }
+    }
+
+    &__ref {
+      margin-top: -1rem;
+    }
+
+    &__img {
+      position: relative;
+      top: 1rem;
+      left: 0.5rem;
+    }
+  }
+
+  .reference__quotes--upper::before {
+    left: -6%;
+    top: 42%;
+    width: 0;
+    height: 0;
+    border-top: 1rem solid transparent;
+    border-right: 1rem solid #f9f9f9;
+    border-bottom: 1rem solid transparent;
+  }
+
+  .reference__quotes--bottom::after {
+    left: 100%;
+    top: 44%;
+    width: 0;
+    height: 0;
+    border-top: 1rem solid transparent;
+    border-left: 1rem solid #f9f9f9;
+    border-bottom: 1rem solid transparent;
+  }
+
+  .copyrights {
+    margin-right: 0;
+    position: relative;
+    left: 10vw;
+  }
+}
+@media screen and (min-width: 1350px) {
+  // NAV-----------------
+  .logo {
+    margin-left: 24%;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 25%;
+    padding-right: 1rem;
+
+    &__element {}
+  }
+
+  .nav-link {
+    padding: 1.2rem;
+    color: $brandDetailsBG;
+    font-family: $nav-font;
+    letter-spacing: 0.1px;
+  }
+  // end of NAV -------------------
+  // HEADER --------------------------
+  // header {
+  //   max-height: 54vh;
+  // }
+  .header-headline {
+    margin-top: 3rem;
+    font-size: 4rem;
+    line-height: 5rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    position: relative;
+    top: 2.5rem;
+  }
+
+  .header-para {
+    top: 3.5rem;
+    position: relative;
+    font-size: 1.4rem;
+  }
+  //header btn/\/\/\/\/\/\/\//\\/\/\/
+  .btn--brand {
+    margin: 5.4rem 0 0;
+    padding: 1.5rem 2.4rem;
+    border-radius: 3.5rem;
+    position: relative;
+    top: 1rem;
+    max-width: 15%;
+  }
+  //header btn/\/\/\/\/\/\/\//\\/\/\/
+  // end of header
+  // about
+  .about {
+    margin: 3rem 0 2.2rem;
+    height: 42vh;
+    margin-bottom: 6rem;
+  }
+
+  .section-title {
+    &__headline {
+      margin: 2rem 1.1rem;
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+
+      &--left {
+        margin: 4rem 0 0 0.5rem;
+        font-size: 2.8rem;
+        font-weight: 800;
+        line-height: 3.5rem;
+      }
+    }
+
+    &__para {
+      margin: 0 2.1rem 2rem;
+      font-size: 1.3rem;
+
+      &--left {
+        position: relative;
+        top: 2rem;
+        max-width: 40rem;
+      }
+    }
+  }
+
+  .services {
+    padding-top: 4rem;
+
+    &__wrapper--mid {
+      margin: 0 1.5rem;
+    }
+
+    &__headline {
+      font-weight: 600;
+    }
+  }
+  //end about
+  // lern more/BLOG
+  .lern-more {
+    &__media-wrap {
+      padding-left: 36vw;
+      margin-top: -1rem;
+    }
+
+    &__btn {
+      margin-left: 1rem;
+      position: relative;
+      top: -1.5rem;
+      left: 0.5rem;
+    }
+  }
+
+  .services-list {
+    position: relative;
+    top: 2.2rem;
+  }
+
+  .circle--check {
+    margin: 0.5rem 1.5rem 1rem;
+  }
+  //end lern more-------------------------------
+  // PORTFOLIO -------------------------------------
+  .portfolio {
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .portfolio-wrap {
+    margin-top: 0.5rem;
+    padding-left: 23rem;
+    width: 50vw;
+    @include flex;
+    justify-content: flex-end;
+  }
+
+  .porftolio-wrap--bg-only {
+    width: 50vw;
+    @include flex;
+    justify-content: flex-end;
+  }
+  // end portfolio ------------------------------------
+  //our work -------------------------
+  .our-work {
+    padding-top: 3.2rem;
+    padding-bottom: 7rem;
+
+    &__para {}
+  }
+
+  .culture {
+    margin-top: 2.4rem;
+  }
+
+  .culture__wrap {
+    max-width: 24rem;
+  }
+
+  .img-ornament {
+    position: relative;
+  }
+
+  .img-ornament::after,
+  .img-ornament::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    width: 12.5rem;
+    // height: 1px;
+    border-top: 2px solid $brandGrey;
+  }
+
+  .img-ornament::after {
+    left: 125%;
+  }
+
+  .img-ornament::before {
+    left: -188%;
+  }
+
+  .our-work__para {
+    margin-top: 1.5rem;
+    padding-bottom: 5rem;
+  }
+  //end of our-work-------------------------
+  // customers references
+  .customers-refs {
+    &__title {
+      margin: 0 0 1.5rem;
+    }
+
+    &__headline {
+      font-size: 2.8rem;
+    }
+  }
+
+  .reference {
+    &__ref {
+      font-size: 1.6rem;
+    }
+  }
+
+  .reference__quotes--upper::before {
+    left: -2rem;
+  }
+  // end of CUSTOMERS
+  //contact----------------------
+  .contact__headline {
+    margin-top: 0.3rem;
+    font-size: 2.5rem;
+  }
+  //end of contact
+  //partners-----------------
+  .partners__logo {
+    margin: 1.5rem;
+  }
+  //end partners
+  //DETAILS --------------------------
+  .details {
+    padding: 1.38rem 0;
+
+    &__box {
+      margin: 2rem 2rem -1rem -1.45rem;
+
+      &--right {
+        margin-left: -1rem;
+        position: relative;
+        left: 6rem;
+      }
+    }
+
+    &__headline {
+      margin-left: 1rem;
+      font-size: 1.3rem;
+      text-align: left;
+    }
+  }
+  // end of details
+  //FOOTER---------------------------
+  footer {
+    justify-content: center;
+  }
+
+  .copyrights {
+    margin-right: 0;
+    position: relative;
+    left: 18vw;
+
+    &__para {
+      font-size: 0.9rem;
+    }
+  }
+
+  .social {
+    margin-right: 33%;
+  }
+
+  .img-wrapper--social {
+    margin: 0.4rem 0.4rem 0.4rem 0.2rem;
+    padding: 0.4rem;
+  }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  .lern-more__media-wrap {
+    padding-left: 30vw;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  * {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 420px) and (max-width: 820px) and (orientation:landscape) {
+  .lern-more__media-wrap {
+    padding-left: 30vw;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .pop-up {
+    &__wrap {
+      min-width: 100vw;
+      min-height: 100vh;
+    }
+
+    &__info {
+      min-width: 80vw;
+    }
+
+    &__close-btn {
+      font-size: 1.2rem;
+      padding: 0.5rem;
+      left: 35%;
+      right: 35%;
+      top: 80%;
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 1630px) {
+  &__wrap {
+    min-width: 50vw;
+
+  }
+  .sub-btn {
+    margin: 1rem;
+  }
+}

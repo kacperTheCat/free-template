@@ -1,0 +1,53 @@
+@import "_colors.scss";
+@import "_mixins.scss";
+@import "_typography.scss";
+@import "_components.scss";
+@import "_reset.scss";
+
+,
+body {
+  @include flex;
+  @include flexy-column;
+}
+
+,
+header,
+main,
+section {
+  @include flex;
+  @include flexy-column;
+  @include flexy-center;
+}
+
+footer,
+header,
+main,
+nav,
+section {
+  width: 100%;
+}
+
+.wrapper {
+  &--column {
+    @include flex;
+    @include flexy-column;
+  }
+
+  &--row {
+    // margin: 1rem;
+    @include flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+.img-wrapper {
+  margin: 0 auto;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.img-wrapper--marg {
+  margin-bottom: 1.5rem;
+}

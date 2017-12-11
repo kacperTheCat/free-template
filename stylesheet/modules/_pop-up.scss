@@ -1,0 +1,93 @@
+.pop-up {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0 ,0, .7);
+  z-index: 100;
+  @include flex;
+  @include flexy-center;
+  display: none;
+
+  &__wrap {
+    @include flex;
+    @include flexy-column;
+    @include flexy-center;
+    width: 45vw;
+    height: 45vh;
+    background: $brandBg;
+    padding: 1.5rem;
+    border-radius: 0.4rem;
+    position: relative;
+    border: 2px solid $brandDetailsBG;
+    box-shadow: 2px 2px 2px 3px rbga(255, 255, 255, .3);
+  }
+
+  &__head {
+    padding: 1rem;
+    font-family: $h-font;
+    font-size: 3rem;
+    font-weight: 800;
+    color: $brandDetailsBG;
+  }
+
+  &__info {
+    padding: 1rem 1rem 2rem;
+    max-width: 20vw;
+    font-size: 1rem;
+    font-family: $p-font;
+    font-weight: 600;
+    text-align: justify;
+  }
+
+  &__form {
+    @include flex;
+    @include flexy-column;
+    @include flexy-center;
+  }
+
+  &__close-btn {
+    padding: 0.5rem 0.8rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 88%;
+    background: $brandBg;
+    border: 2px solid $brandDetailsBG;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-family: $h-font;
+  }
+}
+
+.sub-btn {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border: none;
+  margin: 2rem;
+  padding: 1.3rem;
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+  background: $brandGreen;
+  color: $brandBg;
+  font-family: $nav-font;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.sub-btn:hover {
+  background: $brandGreen - 011;
+}
+
+.active {
+  display: flex;
+}
+
+.email {
+  padding: 0.5rem;
+  border: 0;
+  border: none;
+  border: 2px solid $brandDetailsBG;
+  border-radius: 0.4rem;
+  transition: 0.5s;
+}

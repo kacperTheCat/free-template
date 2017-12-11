@@ -1,0 +1,70 @@
+.sub-title {
+  margin: 1rem 1rem 2rem;
+
+  &__para--left {
+    text-align: left;
+    color: $brandGrey;
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  &__headline--left {
+    margin-bottom: 0.5rem;
+    text-align: left;
+  }
+}
+
+.project-info {
+  margin-bottom: 4rem;
+}
+
+.areas {
+  margin: 1rem 0;
+
+  &__para--left {
+    text-align: left;
+    font-size: 1.2rem;
+    color: $brandGrey;
+  }
+
+  &--first {
+    margin-top: -.5rem;
+  }
+}
+
+.important-serv {
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: $brandblack;
+}
+
+.img-wrapper--serv {
+  padding: 0.5rem;
+  width: 40px;
+  height: 40px;
+}
+
+.circle--serv {
+  margin-left: 1rem;
+  padding: 0.3rem;
+  border: 2px solid $brandblack;
+  border-radius: 100%;
+}
+
+.more-info__para {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  color: $brandGrey;
+  min-width: 32vw;
+}
+
+.portfolio-wrap {
+  width: 100vw;
+  @include flex;
+  justify-content: center;
+}
+
+.porftolio-wrap--bg-only {
+  display: none;
+}

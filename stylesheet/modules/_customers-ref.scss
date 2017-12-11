@@ -1,0 +1,41 @@
+.reference {
+  margin: 1.5rem;
+  @include flex;
+  @include flexy-column;
+  align-items: center;
+
+  &__quotes {
+    padding: 1rem;
+    background: #f9f9f9;
+    position: relative;
+    max-width: 40rem;
+    font-family: $p-font;
+
+    &--green {
+      font-size: 1.1rem;
+      color: $brandGreen;
+    }
+
+    &--upper {
+      margin-top: 2.5rem;
+    }
+
+    &--bottom {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__ref {
+    color: $brandGrey;
+    font-size: 1.4rem;
+    text-align: center;
+    display: block;
+  }
+}
+
+.rferences {
+  @include flex;
+  // @include flexy-center;
+  flex-wrap: wrap;
+  max-width: 960px;
+}

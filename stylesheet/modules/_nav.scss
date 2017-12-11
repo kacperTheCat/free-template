@@ -1,0 +1,65 @@
+@import "../base/_globals.scss";
+
+nav {
+  padding-left: 2rem;
+  position: fixed;
+  top: 0;
+  height: 5rem;
+  background: $brandBg;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, .1);
+  @include flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  transition: .7s;
+}
+.nav-link{
+  display: none;
+}
+
+.mobile-nav {
+  // display: none;
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  width: 100%;
+
+  z-index: 15;
+  background: rgba(0, 0, 0, .9);
+  @include flexy-column;
+  @include flexy-center;
+  height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+  &__element {
+    // height: 9vh;
+    @include flex;
+    @include flexy-center;
+    width: 100%;
+    height: 8vh;
+
+
+  }
+}
+
+.mobile-link {
+  width: 100%;
+  height: 100%;
+  @include flex;
+  @include flexy-center;
+  font-size: 1.2rem;
+  font-family: $h-font;
+  border-top: 1px solid rgba(255, 255, 255, .5);
+  border-bottom: none;
+
+
+  &--last {
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+  }
+}
+.open{
+  height: 45vh;
+  transition: .4s;
+  overflow: visible;
+  display: flex;
+}

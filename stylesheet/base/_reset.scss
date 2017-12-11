@@ -1,0 +1,44 @@
+* {
+  font-size: 14px;
+  // margin: 0;
+  // padding: 0;
+  // text-decoration: none;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $brandBg;
+}
+
+a:hover {
+  color: +#222;
+}
+
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+}
+
+button:focus {
+  color: #fff;
+  background: #fff;
+}

@@ -1,0 +1,20 @@
+.partners {
+  margin: 2rem;
+  min-width: 100%;
+  min-height: 11.3vh;
+
+  &__logo {
+    margin: 1rem;
+
+    &--last {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.partners-wrap {
+  @include flex;
+  @include flexy-center;
+  flex-wrap: wrap;
+  width: 100%;
+}

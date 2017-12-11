@@ -1,0 +1,23 @@
+.services {
+  margin-bottom: 3rem;
+  @include flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__wrapper {
+    margin: 1.8rem 0;
+    @include flex;
+    @include flexy-column;
+    @include flexy-center;
+    width: 22rem;
+  }
+
+  &__headline {
+    margin: 0 1rem;
+  }
+
+  &__para {
+    font-size: 1rem;
+    color: $brandGrey;
+  }
+}

@@ -1,0 +1,19 @@
+.our-work {
+
+  background: #f9f9f9;
+
+  &_para {
+
+    padding-top: .5rem;
+    font-size: 1rem;
+    color: $brandGrey;
+  }
+}
+
+.culture {
+  margin-top: 2rem;
+  @include flex;
+  @include flexy-center;
+  flex-wrap: wrap;
+
+}
