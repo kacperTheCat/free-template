@@ -23,8 +23,11 @@ $(window).scroll(function() {
 $(document).ready(function() {
   setTimeout(function() {
     $('.pop-up').addClass('active');
-  }, 5000);
+  }, 7000);
   $('.pop-up__close-btn').on('click', function() {
     $('.pop-up').fadeOut(500);
   })
+  setTimeout(function() {
+    $('.preloader').fadeOut(500);
+  }, 2000);
 });
