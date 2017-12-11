@@ -33,9 +33,9 @@
   }
 
   .main-nav {
-    display: flex;
     margin-right: 5%;
     padding-right: 1rem;
+    @include flex;
     align-items: center;
 
     &__element {}
@@ -60,7 +60,7 @@
   footer {
     justify-content: flex-start;
     align-items: center;
-    flex-direction: row;
+    @include flexy-row;
   }
 
   .copyrights {
@@ -68,8 +68,8 @@
   }
 
   .social {
-    width: 33%;
     margin-right: 33%;
+    width: 33%;
   }
 }
 @media screen and (min-width: 950px) {
@@ -88,7 +88,7 @@
 
   .reference {
     margin: 1.6rem;
-    flex-direction: row;
+    @include flexy-row;
     align-items: center;
     position: relative;
     top: 1rem;
@@ -168,11 +168,11 @@
   .logo {
     margin-left: 24%;
   }
+  padding-right: 1rem;
 
   .main-nav {
-    display: flex;
     margin-right: 25%;
-    padding-right: 1rem;
+    display: flex;
 
     &__element {}
   }
@@ -191,9 +191,9 @@
   .header-headline {
     margin-top: 3rem;
     font-size: 4rem;
+    font-weight: 700;
     line-height: 5rem;
     letter-spacing: 1px;
-    font-weight: 700;
     position: relative;
     top: 2.5rem;
   }
@@ -207,26 +207,24 @@
   .btn--brand {
     margin: 5.4rem 0 0;
     padding: 1.5rem 2.4rem;
+    max-width: 15%;
     border-radius: 3.5rem;
     position: relative;
     top: 1rem;
-    max-width: 15%;
   }
   //header btn/\/\/\/\/\/\/\//\\/\/\/
   // end of header
   // about
   .about {
-    margin: 3rem 0 2.2rem;
+    margin: 3rem 0 6rem;
     height: 42vh;
-    margin-bottom: 6rem;
   }
 
   .section-title {
     &__headline {
-      margin: 2rem 1.1rem;
+      margin: 2rem 1.1rem 1rem;
       font-size: 2.5rem;
       font-weight: 800;
-      margin-bottom: 1rem;
 
       &--left {
         margin: 4rem 0 0 0.5rem;
@@ -241,9 +239,9 @@
       font-size: 1.3rem;
 
       &--left {
+        max-width: 40rem;
         position: relative;
         top: 2rem;
-        max-width: 40rem;
       }
     }
   }
@@ -308,8 +306,6 @@
   .our-work {
     padding-top: 3.2rem;
     padding-bottom: 7rem;
-
-    &__para {}
   }
 
   .culture {
@@ -326,11 +322,10 @@
 
   .img-ornament::after,
   .img-ornament::before {
+    width: 12.5rem;
     position: absolute;
     content: "";
     top: 50%;
-    width: 12.5rem;
-    // height: 1px;
     border-top: 2px solid $brandGrey;
   }
 
@@ -451,11 +446,11 @@
     }
 
     &__close-btn {
-      font-size: 1.2rem;
       padding: 0.5rem;
       left: 35%;
       right: 35%;
       top: 80%;
+      font-size: 1.2rem;
       text-align: center;
     }
   }
@@ -463,9 +458,23 @@
 @media screen and (max-width: 1630px) {
   &__wrap {
     min-width: 50vw;
-
+    min-height: 40vh;
   }
+
   .sub-btn {
     margin: 1rem;
+  }
+}
+@media screen and (min-width: 2200px) {
+  * {
+    font-size: 30px;
+  }
+
+  .img-ornament::before {
+    left: -373%;
+  }
+
+  .img-ornament::after {
+    left: 154%;
   }
 }

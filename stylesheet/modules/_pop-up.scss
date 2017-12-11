@@ -1,11 +1,10 @@
 .pop-up {
-  position: fixed;
-  top: 0;
   width: 100vw;
   height: 100vh;
+  position: fixed;
+  top: 0;
   background: rgba(0, 0 ,0, .7);
   z-index: 100;
-  @include flex;
   @include flexy-center;
   display: none;
 
@@ -14,7 +13,7 @@
     @include flexy-column;
     @include flexy-center;
     width: 45vw;
-    height: 45vh;
+    height: 55vh;
     background: $brandBg;
     padding: 1.5rem;
     border-radius: 0.4rem;
@@ -60,8 +59,8 @@
 }
 
 .sub-btn {
-  padding: 0;
   margin: 0;
+  padding: 0;
   border: 0;
   border: none;
   margin: 2rem;
