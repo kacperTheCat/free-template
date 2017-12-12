@@ -12,11 +12,17 @@
     justify-content: center;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 620px){
   .lern-more__media-wrap {
-    padding-left: 15vw;
+    padding-left: 18vw;
   }
 }
+// 
+// @media screen and (min-width: 700px) {
+//   .lern-more__media-wrap {
+//     padding-left: 15vw;
+//   }
+// }
 @media screen and (min-width: 810px) {
   // HAM INTO navigation
   .mobile-nav {

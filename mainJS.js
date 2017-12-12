@@ -22,8 +22,10 @@ $(window).scroll(function() {
   } else {
     if ($(document).scrollTop() > 150) {
       $('nav').css("height", "3rem");
+      $('.mobile-nav').css("top", "2rem")
     } else {
       $('nav').css("height", "70px");
+      $('.mobile-nav').css("top", "4rem")
     }
   }
 })

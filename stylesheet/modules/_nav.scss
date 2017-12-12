@@ -11,9 +11,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   z-index: 10;
-  transition: .7s;
+  transition: 0.7s;
 }
-.nav-link{
+
+.nav-link {
   display: none;
 }
 
@@ -23,22 +24,20 @@ nav {
   top: 4rem;
   left: 0;
   width: 100%;
-
   z-index: 15;
   background: rgba(0, 0, 0, .9);
   @include flexy-column;
   @include flexy-center;
   height: 0;
-    overflow: hidden;
-    transition: height 0.3s;
+  overflow: hidden;
+  transition: height 0.3s;
+
   &__element {
     // height: 9vh;
     @include flex;
     @include flexy-center;
     width: 100%;
     height: 8vh;
-
-
   }
 }
 
@@ -52,14 +51,14 @@ nav {
   border-top: 1px solid rgba(255, 255, 255, .5);
   border-bottom: none;
 
-
   &--last {
     border-bottom: 1px solid rgba(255, 255, 255, .5);
   }
 }
-.open{
+
+.open {
   height: 45vh;
-  transition: .4s;
+  transition: 0.4s;
   overflow: visible;
   display: flex;
 }
