@@ -12,18 +12,27 @@ $('.mobile-link, .nav-link, .link').on('click', function() {
     });
   }
 });
-
 $(window).scroll(function() {
-  if ($(document).scrollTop() > 350) {
-    $('nav').css("height", "5rem");
+  if ($(window).width() >= 810) {
+    if ($(document).scrollTop() > 350) {
+      $('nav').css("height", "5rem");
+    } else {
+      $('nav').css("height", "112px");
+    }
   } else {
-    $('nav').css("height", "112px");
+    if ($(document).scrollTop() > 150) {
+      $('nav').css("height", "3rem");
+    } else {
+      $('nav').css("height", "70px");
+    }
   }
-});
+})
+
+
 $(document).ready(function() {
   setTimeout(function() {
     $('.pop-up').addClass('active');
-  }, 7000);
+  }, 8000);
   $('.pop-up__close-btn').on('click', function() {
     $('.pop-up').fadeOut(500);
   })
